@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogłoszenie - OLX</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .container { width: 100%; max-width: 800px; margin: 0 auto; padding: 20px; background: white; }
+        .header { text-align: center; background-color: #0071c5; color: white; padding: 10px; }
+        .header h1 { font-size: 24px; }
+        .ad-details { margin: 20px 0; padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; }
+        .price { color: green; font-size: 22px; font-weight: bold; }
+        .location { color: #777; font-size: 16px; }
+        .form-container { margin-top: 20px; }
+        input[type="text"], input[type="email"], input[type="submit"] {
+            width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Ogłoszenie na sprzedaż</h1>
+        </div>
+
+        <div class="ad-details">
+            <p><strong>Tytuł ogłoszenia:</strong> Laptop do sprzedaży</p>
+            <p><strong>Opis:</strong> Sprzedam nowego laptopa w bardzo dobrym stanie.</p>
+            <p class="price">Cena: 1500 PLN</p>
+            <p class="location">Lokalizacja: Warszawa</p>
+        </div>
+
+        <div class="form-container">
+            <h2>Kontakt z sprzedawcą</h2>
+            <form action="#" method="POST">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Adres e-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <input type="submit" value="Wyślij wiadomość">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
